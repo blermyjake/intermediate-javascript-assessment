@@ -8,13 +8,16 @@
 // For this question, you are asked to make a function called 'callBinding'.
 // This function will take in 3 parameters:
 // magicAnimals (Array), updateAnimal (Function), id (Number).
+
 // Find the animal that matches the given id, then call the update function
 // with the animal as the context, and 'Trogdor' as a parameter.
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
 
-
+function callBinding(magicAnimals, updateAnimal, id) {
+  return;
+}
 
 // *************
 // * PROBLEM 2 *
@@ -29,7 +32,7 @@
 
 // CODE HERE...
 
-
+function applyBinding(magicAnimals, updateAnimal, id) {}
 
 // *************
 // * PROBLEM 3 *
@@ -49,7 +52,7 @@ var foo;
 
 // CODE HERE...
 
-
+function promiseMe($q) {}
 
 // *************
 // * PROBLEM 4 *
@@ -64,3 +67,4 @@ var foo;
 // and then resolve the array as you complete your promise.
 
 // CODE HERE...
+function emailList($q, $http)
