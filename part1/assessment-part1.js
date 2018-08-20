@@ -113,6 +113,12 @@ mustang.drive();
 
 // CODE HERE...
 
+String.prototype.grammarPolice = function() {
+  return this.toLowerCase().replace(/\b\w/g, function(m) {
+    return m.toUpperCase();
+  });
+};
+
 // *************
 // * PROBLEM 4 *
 // *************
@@ -128,6 +134,16 @@ mustang.drive();
 // In all other cases, return "Different values"
 
 // CODE HERE...
+function valueType(num1, num2) {
+  if (num1 === num2) {
+    return "Exactly the same";
+  } else if (num1 == num2) {
+    return "Same value, different types";
+  } else {
+    return "Different values";
+  }
+}
+valueType(1, "babies");
 
 // *************
 // * PROBLEM 5 *
@@ -141,3 +157,9 @@ mustang.drive();
 var theAnswer = "Unknown";
 
 // CODE HERE...
+function promiseCatcher(promise) {
+  promise.then(function(result) {
+    theAnswer = result;
+    return result;
+  });
+}
