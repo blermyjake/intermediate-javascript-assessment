@@ -41,8 +41,17 @@ function noWeakLink() {
   return $http({
     method: "GET",
     url: "/api/users"
-  });
-  // CODE HERE...
+
+    // CODE HERE...
+  })
+    .then(function(firstResp) {
+      firstUser = firstResp.data[0];
+      return firstResp;
+    })
+    .then(function(secResp) {
+      thirdUser = secResp.data[2];
+      return secResp.data[9];
+    });
 }
 
 // *************
