@@ -54,6 +54,8 @@ var foo;
 
 function promiseMe($q) {}
 
+// return this.promise;
+
 // *************
 // * PROBLEM 4 *
 // *************
@@ -67,4 +69,7 @@ function promiseMe($q) {}
 // and then resolve the array as you complete your promise.
 
 // CODE HERE...
-function emailList($q, $http)
+function emailList($q, $http) {}
+{
+  // return .promise
+}
